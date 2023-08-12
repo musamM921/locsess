@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки</title>
+</head>
+<body>
+    <p style="font-family: 'Arial', sans-serif;">
+        <h4 style="color: #236409;">LocalStorage (Локальное хранилище) и SessionStorage (Сеансовое хранилище)</h4> 
+        - это специальные места в веб-браузере, где веб-сайты могут сохранять небольшие <br>
+        кусочки информации на вашем компьютере, чтобы использовать их позже, даже после <br>
+        того как вы закроете вкладку или перезагрузите страницу. <br>
+    </p>
+    
+    <p style="font-family: 'Arial', sans-serif;">
+        <h4 style="color: #236409;">Вот примеры, чтобы лучше понять:</h4>
+    </p>
+    <p style="font-family: 'Arial', sans-serif;">
+        <h4 style="color: #236409;">LocalStorage (Локальное хранилище):</h4>
+        Допустим, вы играете в онлайн-игру и хотите сохранить прогресс. Вместо того <br>
+        чтобы каждый раз начинать сначала, игра может сохранить ваш текущий уровень <br>
+        в Локальное хранилище. После закрытия игры и открытия ее снова, вы все равно <br>
+        будете на том же уровне. <br>
+    </p>
+    
+    <p style="font-family: 'Arial', sans-serif;">
+        <h4 style="color: #236409;">SessionStorage (Сеансовое хранилище):</h4> 
+        Представьте, что вы заполняете форму на веб-сайте и вдруг случается сбой. Чтобы <br>
+        не потерять все, что вы уже ввели, сайт может сохранить эту информацию в Сеансовое <br>
+        хранилище. Когда вы обновите страницу или вернетесь позже, ваши данные останутся <br>
+        на месте. <br>
+    </p>
+
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <h2 style="color: #9b0202;">AZƏRBAYCAN DİLİNDƏ TƏRCÜMƏ</h2>
+    </p>
+    <p style="font-family: 'Arial', sans-serif;">
+        <h4 style="color: #236409;">LocalStorage (Lokal yaddaş) və SessionStorage (Session storage)</h4> 
+        veb-brauzerdə veb-saytların kiçik qənaət edə biləcəyi xüsusi yerlərdir daha sonra, <br>
+        hətta sonra istifadə etmək üçün kompüterinizdək məlumat parçaları nişanı bağladıqdan <br>
+        və ya səhifəni yenidən yüklədikdən sonra. <br>
+    </p>
+
+    <p style="font-family: 'Arial', sans-serif;">
+        <h4 style="color: #236409;">Daha yaxşı başa düşmək üçün nümunələr:</h4>
+    </p>
+
+    <p style="font-family: 'Arial', sans-serif;">
+        <h4 style="color: #236409;">LocalStorage (Yerli yaddaş):</h4>
+        Deyək ki, siz onlayn oyun oynayırsınız və tərəqqinizi saxlamaq istəyirsiniz. <br>
+        Əvəzinə hər dəfə yenidən başlamaq üçün oyun cari səviyyənizi saxlaya bilər <br>
+        Yerli yaddaşa. Oyunu bağladıqdan və yenidən açdıqdan sonra hələ də eyni <br>
+        səviyyədə olacaqsınız. <br>
+    </p>
+
+    <p style="font-family: 'Arial', sans-serif;">
+        <h4 style="color: #236409;">SessionStorage (Session storage):</h4> 
+        Təsəvvür edin ki, bir vebsaytda bir forma doldurursunuz və birdən nəsə səhv olur. Kimə <br>
+        Artıq daxil etdiyiniz hər şeyi itirməmək üçün sayt bu məlumatları sessiyada saxlaya bilər <br>
+        saxlama. Səhifəni yenilədiyiniz və ya daha sonra qayıtdığınız zaman məlumatlarınız qalacaq <br>
+        yerində. <br>
+    </p>
+
+<p>
+    
+   <textarea  id="noteInput" cols="50" rows="4"></textarea>
+   <button id="saveButton">Сохранить</button>
+   <div id="savedNotes"></div>
+
+
+</p>
+
+<p>
+    В этом примере мы создали простую страницу "Заметки". Пользователи могут вводить свои заметки в текстовое <br>
+    поле, затем нажимать кнопку "Сохранить", чтобы сохранить заметку на странице и в LocalStorage. При обновлении <br>
+    страницы или повторном посещении пользователь увидит свои сохраненные заметки. <br> </p>
+
+    <p>
+        При загрузке страницы мы проверяем, есть ли сохраненные заметки в LocalStorage, и выводим их на страницу. При <br>
+        нажатии кнопки "Сохранить" мы берем текущие заметки из LocalStorage, добавляем новую заметку и сохраняем <br>
+        обновленный список обратно в LocalStorage. <br>
+    </p>
+   
+
+    Этот пример демонстрирует, как использовать LocalStorage для сохранения данных на простом сайте. <br>
+</p>
+
+   <script src="./assets/js/main.js"></script>
+</body>
+</html>
